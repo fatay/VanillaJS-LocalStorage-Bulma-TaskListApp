@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>fatihaydin!</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <style>
+         .icn{
+            margin-right: 8px;
+         }
+         .del{
+            float:right;
+         }
+      </style>
+   </head>
+   <body>
+      <section class="section">
+         <div class="container">
+            <div class="columns">
+               <div class="column"></div>
+               <div class="column">
+                  <h3 class="title is-3 has-text-dark">@Task List App with <span class="has-background-link-dark has-text-primary-light p-1">Bulma</span></h3>
+                  <form class="box" id="#task-form">
+                     <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                           <input class="input" id="taskInput" type="text" placeholder="Write your tasks here.">
+                           <span class="icon is-small is-left">
+                              <i class="fas fa-thumbtack"></i>
+                           </span>
+                        </p>
+                     </div>
+                     <div class="field">
+                        <p class="control">
+                          <button class="button is-link is-outlined add-task" style="width: 100%;">
+                              <span class="icon is-small is-left">
+                                 <i class="fas fa-plus"></i>
+                              </span>
+                              <span>Add Task</span>
+                          </button>
+                        </p>
+                      </div>
+                  </form>
+                  <br />
+                  <div class="content">
+                     <table>
+                        <thead>
+                           <tr>
+                             <th class="has-background-link-dark">
+                                <span class="has-text-white">Tasks</span>
+                             </th>
+                           </tr>
+                        </thead>
+                        <tbody class="collection">
+                        </tbody>
+                     </table>
+                  </div><br>
+                  <button class="button is-dark is-outlined clear-tasks" style="width: 100%;">
+                        <i class="fas fa-trash">&nbsp;&nbsp;</i
+                     <span>Clear All Tasks</span>
+                 </button>
+               </div>
+               <div class="column"></div>
+            </div>
+         </div>
+      </section>
+      <script src="app.js"></script>
+   </body>
+</html>
